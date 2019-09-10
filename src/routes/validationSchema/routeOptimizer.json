@@ -1,0 +1,40 @@
+{
+    "id": "/routeOptimizer",
+    "type": "object",
+    "properties": {
+        "departureTime": {
+            "type": "number"
+        },
+        "home": {
+            "type": "object",
+            "properties": {
+                "lat": {
+                    "type": "number"
+                },
+                "lng": {
+                    "type": "number"
+                }
+            }
+        },
+        "tasks": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "integer"
+                    },
+                    "lat": {
+                        "type": "number"
+                    },
+                    "lng": {
+                        "type": "number"
+                    },
+                    "duration": {
+                        "type": "integer"
+                    }
+                }
+            }
+        }
+    }
+}
